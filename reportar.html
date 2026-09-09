@@ -10,137 +10,51 @@
 
     <header>
         <div>
-
-            <a href="index.html">
-                Agencia de Detectives
-            </a>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                        <a href="casos.html">Casos</a>
-                    </li>
-
-                    <li>
-                        <a href="detectives.html">Detectives</a>
-                    </li>
-
-                    <li>
-                        <a href="reportar.html">Reportar un caso</a>
-                    </li>
-                </ul>
-            </nav>
-
+        <div>
+          <h2>¿Necesitas que investiguemos algo?</h2>
+          <p>Cuéntanos qué pasó. Un investigador revisará tu caso y te contactará en menos de 48 horas.</p>
+          <img src="" alt="">
         </div>
-    </header>
 
-    <main>
+        <!-- La funcionalidad JS #2 valida este formulario antes de "enviarlo" -->
+        <form name="formularioCaso" onsubmit="validarFormulario(); return false;">
 
-        <section>
+          <div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura Gómez">
 
-            <h1>¿Necesitas que investiguemos algo?</h1>
+          </div>
 
-            <p>
-                Cuéntanos qué pasó. Un investigador revisará tu caso
-                y te contactará en menos de 48 horas.
-            </p>
+          <div>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
 
-            <form id="formularioCaso" novalidate>
+          </div>
 
-                <div>
+          <div>
+            <label for="urgencia">Nivel de urgencia</label>
+            <select id="urgencia" name="urgencia">
+              <option value="">Selecciona una opción</option>
+              <option value="baja">Baja</option>
+              <option value="media">Media</option>
+              <option value="alta">Alta</option>
+            </select>
 
-                    <label for="nombre">
-                        Nombre completo
-                    </label>
+          </div>
 
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Ej: Laura Gómez"
-                    >
+          <div>
+            <label for="descripcion">Describe el caso</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos qué ocurrió, cuándo y dónde..."></textarea>
 
-                    <span id="errorNombre"></span>
+          </div>
 
-                </div>
+          <button type="submit">Enviar reporte</button>
 
-                <div>
-
-                    <label for="correo">
-                        Correo electrónico
-                    </label>
-
-                    <input
-                        type="email"
-                        id="correo"
-                        name="correo"
-                        placeholder="ejemplo@correo.com"
-                    >
-
-                    <span id="errorCorreo"></span>
-
-                </div>
-
-                <div>
-
-                    <label for="urgencia">
-                        Nivel de urgencia
-                    </label>
-
-                    <select id="urgencia" name="urgencia">
-
-                        <option value="">
-                            Selecciona una opción
-                        </option>
-
-                        <option value="baja">
-                            Baja
-                        </option>
-
-                        <option value="media">
-                            Media
-                        </option>
-
-                        <option value="alta">
-                            Alta
-                        </option>
-
-                    </select>
-
-                    <span id="errorUrgencia"></span>
-
-                </div>
-
-                <div>
-
-                    <label for="descripcion">
-                        Describe el caso
-                    </label>
-
-                    <textarea
-                        id="descripcion"
-                        name="descripcion"
-                        rows="4"
-                        placeholder="Cuéntanos qué ocurrió, cuándo y dónde..."
-                    ></textarea>
-
-                    
-
-                </div>
-
-                <button type="submit">
-                    Enviar reporte
-                </button>
-
-                <p id="mensajeExito" hidden>Reporte enviado. Un detective revisará tu caso pronto.</p>
-
-            </form>
-
-        </section>
+          <p id="mensajeExito" style="display: none;">
+            Reporte enviado. Un detective revisará tu caso pronto.
+          </p>
+        </form>
+      </div>
 
     </main>
 
