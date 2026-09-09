@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Reportar un caso</title>
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
     <header>
+
         <div>
 
             <a href="index.html">
@@ -18,6 +22,7 @@
 
             <nav>
                 <ul>
+
                     <li>
                         <a href="index.html">Inicio</a>
                     </li>
@@ -33,76 +38,163 @@
                     <li>
                         <a href="reportar.html">Reportar un caso</a>
                     </li>
+
                 </ul>
             </nav>
-        <div>
+
+        </div>
 
     </header>
 
-    
-            <button id="botonTema" class="boton-tema" type="button" onclick="cambiarModo()">
-            🌙 Modo oscuro ☀️</button>
-        
+
+    <button
+        id="botonTema"
+        class="boton-tema"
+        type="button"
+        onclick="cambiarModo()"
+    >
+        🌙 Modo oscuro ☀️
+    </button>
+
+
     <main>
 
-            
+        <div>
 
-          <h2>¿Necesitas que investiguemos algo?</h2>
-          <p>Cuéntanos qué pasó. Un investigador revisará tu caso y te contactará en menos de 48 horas.</p>
-          <img src="" alt="">
+            <h2>
+                ¿Necesitas que investiguemos algo?
+            </h2>
+
+            <p>
+                Cuéntanos qué pasó. Un investigador revisará tu caso
+                y te contactará en menos de 48 horas.
+            </p>
+
+            <img src="" alt="">
+
         </div>
 
-        <!-- La funcionalidad JS #2 valida este formulario antes de "enviarlo" -->
-        <form name="formularioCaso" onsubmit="validarFormulario(); return false;">
 
-          <div>
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Laura Gómez">
+        <!-- Formulario -->
 
-          </div>
+        <form
+            name="formularioCaso"
+            onsubmit="validarFormulario(); return false;"
+        >
 
-          <div>
-            <label for="correo">Correo electrónico</label>
-            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+            <div>
 
-          </div>
+                <label for="nombre">
+                    Nombre completo
+                </label>
 
-          <div>
-            <label for="urgencia">Nivel de urgencia</label>
-            <select id="urgencia" name="urgencia">
-              <option value="">Selecciona una opción</option>
-              <option value="baja">Baja</option>
-              <option value="media">Media</option>
-              <option value="alta">Alta</option>
-            </select>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ej: Laura Gómez"
+                >
 
-          </div>
+            </div>
 
-          <div>
-            <label for="descripcion">Describe el caso</label>
-            <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos qué ocurrió, cuándo y dónde..."></textarea>
 
-          </div>
+            <div>
 
-          <button type="submit">Enviar reporte</button>
+                <label for="correo">
+                    Correo electrónico
+                </label>
 
-          <p id="mensajeExito" style="display: none;">
-            Reporte enviado. Un detective revisará tu caso pronto.
-          </p>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                >
+
+            </div>
+
+
+            <div>
+
+                <label for="urgencia">
+                    Nivel de urgencia
+                </label>
+
+                <select
+                    id="urgencia"
+                    name="urgencia"
+                >
+
+                    <option value="">
+                        Selecciona una opción
+                    </option>
+
+                    <option value="baja">
+                        Baja
+                    </option>
+
+                    <option value="media">
+                        Media
+                    </option>
+
+                    <option value="alta">
+                        Alta
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label for="descripcion">
+                    Describe el caso
+                </label>
+
+                <textarea
+                    id="descripcion"
+                    name="descripcion"
+                    rows="4"
+                    placeholder="Cuéntanos qué ocurrió, cuándo y dónde..."
+                ></textarea>
+
+            </div>
+
+
+            <button type="submit">
+                Enviar reporte
+            </button>
+
+
+            <p id="mensajeExito" style="display: none;">
+                Reporte enviado.
+                Un detective revisará tu caso pronto.
+            </p>
+
         </form>
-      </div>
 
     </main>
 
+
     <footer>
 
-        <p>&copy; Agencia de Detectives. Todos los casos son confidenciales.</p>
+        <p>
+            &copy; Agencia de Detectives.
+            Todos los casos son confidenciales.
+        </p>
 
-        <p>Popayán, Cauca · detectiveslistos@gmail.com · (602) 555-0134</p>
+        <p>
+            Popayán, Cauca · detectiveslistos@gmail.com ·
+            (602) 555-0134
+        </p>
 
     </footer>
+
+
     <script src="js/script.js"></script>
-    
 
 </body>
+
 </html>
+
