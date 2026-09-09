@@ -8,6 +8,9 @@ function validarFormulario() {
     if (x.trim() === "") {
         alert("El campo nombre debe ser llenado");
         return false;
+    }else {
+        // Llama a la función para hacer visible el mensaje
+        mostrarOcultar();
     }
 }
 
