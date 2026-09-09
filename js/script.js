@@ -10,3 +10,12 @@ function validarFormulario() {
         return false;
     }
 }
+
+function mostrarOcultar() {
+    var x = document.getElementById("mensajeExito");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
