@@ -124,3 +124,20 @@ img {
     height: auto;
     border-radius: 6px;
 }
+
+/* 
+   FORMULARIO
+   */
+form {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 25px;
+    border-radius: 6px;
+    max-width: 600px;
+}
+
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
