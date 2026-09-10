@@ -74,3 +74,16 @@ nav a:hover {
     color: #e0a96d;
 }
 
+/* 
+   BOTÓN DE CAMBIO DE TEMA
+   */
+.boton-tema {
+    background-color: #e0a96d;
+    color: #1b263b;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 15px 50px;
+}
