@@ -179,3 +179,16 @@ a[href="reportar.html"]:hover {
     opacity: 0.9;
     cursor: pointer;
 }
+
+
+/* 
+   PIE DE PÁGINA
+    */
+footer {
+    background-color: #1b263b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
