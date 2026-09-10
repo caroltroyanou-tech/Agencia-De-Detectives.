@@ -1,6 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+    if (localStorage.getItem("modoOscuro") === "activado") {
+        document.body.classList.add("dark-mode");
+    }
+});
+
 function cambiarModo() {
     var elemento = document.body;
     elemento.classList.toggle("dark-mode");
+
+    if (elemento.classList.contains("dark-mode")) {
+        localStorage.setItem("modoOscuro", "activado");
+    } else {
+        localStorage.setItem("modoOscuro", "desactivado");
+    }
 }
 
 function validarFormulario() {
