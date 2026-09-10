@@ -192,3 +192,33 @@ footer {
     margin-top: 40px;
     font-size: 14px;
 }
+
+/* 
+   DISEÑO ADAPTABLE / RESPONSIVE
+   */
+@media (max-width: 768px) {
+    header div {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .boton-tema {
+        margin: 15px auto;
+        display: block;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+}
