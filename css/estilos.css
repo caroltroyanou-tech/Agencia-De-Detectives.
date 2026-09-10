@@ -101,3 +101,19 @@ h1, h2 {
     color: #1b263b;
 }
 
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #e0a96d;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
