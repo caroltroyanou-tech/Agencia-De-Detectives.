@@ -117,3 +117,10 @@ article {
     padding: 20px;
     margin-bottom: 20px;
 }
+
+/* Control para que las imágenes no se desborden en móviles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
