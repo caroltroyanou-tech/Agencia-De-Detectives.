@@ -222,3 +222,21 @@ footer {
         padding: 15px;
     }
 }
+
+img[src="img/detective.png"] {
+    max-width: 35%;
+    margin: 0 auto;
+    display: block;
+}
+
+img[src="img/detectivem.avif"] {
+    max-width: 35%;
+    margin: 0 auto;
+    display: block;
+}
+
+img[src="img/detectiv.webp"] {
+    max-width: 35%;
+    margin: 0 auto;
+    display: block;
+}
