@@ -12,5 +12,13 @@ body {
     line-height: 1.6;
 }
 
+body.dark-mode header,
+body.dark-mode article,
+body.dark-mode form,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #333333;
+}
 
 
