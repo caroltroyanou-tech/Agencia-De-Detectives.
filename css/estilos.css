@@ -87,3 +87,17 @@ nav a:hover {
     font-weight: bold;
     margin: 15px 50px;
 }
+
+/* 
+   CONTENIDO PRINCIPAL, SECCIONES Y TARJETAS
+    */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #1b263b;
+}
+
