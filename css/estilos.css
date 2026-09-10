@@ -21,4 +21,11 @@ body.dark-mode footer {
     border-color: #333333;
 }
 
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    border-color: #444444;
+}
 
