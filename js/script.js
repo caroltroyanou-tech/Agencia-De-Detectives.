@@ -11,6 +11,7 @@ function validarFormulario() {
     }else {
         // Llama a la función para hacer visible el mensaje
         mostrarOcultar();
+        document.forms["formularioCaso"].reset();
     }
 }
 
