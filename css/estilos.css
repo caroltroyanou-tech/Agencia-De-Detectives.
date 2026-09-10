@@ -3,6 +3,10 @@ body.dark-mode {
     color: #ffffff;
 }
 
+/* 
+   ESTILOS GENERALES Y MODO OSCURO
+    */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,3 +33,26 @@ body.dark-mode textarea {
     border-color: #444444;
 }
 
+/* 
+   EN CABEZADO Y NAVEGACIÓN
+    */
+header {
+    background-color: #1b263b;
+    color: #ffffff;
+    padding: 15px 50px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
